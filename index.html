@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divinas del Stellaron</title>
+  <link rel="icon" href="favicon/favicon-HSR.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: url('img-fondos/honkai-star-rail.jpg') center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .fade-in {
+      animation: fade-in 1s ease-out forwards;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .titulo {
+      text-shadow: 0 0 12px #38bdf8;
+    }
+
+    .card {
+      background-color: rgba(15, 23, 42, 0.8);
+      border: 2px solid #38bdf8;
+      border-radius: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(251, 191, 36, 0.5);
+      border-color: #facc15;
+    }
+
+    .card img {
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+
+    .card-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 12px;
+      color: #38bdf8;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body class="text-white">
+  <div class="min-h-screen bg-black bg-opacity-70 p-8 fade-in">
+    <header class="text-center mb-10">
+      <h1 class="text-5xl font-extrabold titulo text-cyan-300">Divinas del Stellaron</h1>
+      <p class="text-xl text-slate-300 mt-3">Selecciona una heroína para ver su historia y habilidades</p>
+    </header>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      
+      <!-- Feixiao -->
+      <a href="Feixiao.html" target="_blank" class="card overflow-hidden block">
+        <img src="img personajes/Feixiao.jpg" alt="Feixiao" class="w-full object-cover h-64">
+        <div class="card-name">Feixiao</div>
+      </a>
+
+      <a href="Acheron.html" target="_blank" class="card overflow-hidden block">
+        <img src="img personajes/Acheron.jpg" alt="Acheron" class="w-full object-cover h-64">
+        <div class="card-name">Acheron</div>
+      </a>
+
+      <a href="Black-Swan.html" target="_blank" class="card overflow-hidden block">
+        <img src="img personajes/Black Swan.jpg" alt="Black Swan" class="w-full object-cover h-64">
+        <div class="card-name">Black Swan</div>
+      </a>
+
+      <a href="Robin.html" target="_blank" class="card overflow-hidden block">
+        <img src="img personajes/Robin.jpg" alt="Robin" class="w-full object-cover h-64">
+        <div class="card-name">Robin</div>
+      </a>
+
+      <a href="Himeko.html" target="_blank" class="card overflow-hidden block">
+        <img src="img personajes/Himeko.jpg" alt="Himeko" class="w-full object-cover h-64">
+        <div class="card-name">Himeko</div>
+      </a>
+
+      <a href="Jade.html" target="_blank" class="card overflow-hidden block">
+        <img src="img personajes/Jade.jpg" alt="Jade" class="w-full object-cover h-64">
+        <div class="card-name">Jade</div>
+      </a>
+
+      <a href="Yunkong.html" target="_blank" class="card overflow-hidden block">
+        <img src="img personajes/Yukong.jpg" alt="Yukong" class="w-full object-cover h-64">
+        <div class="card-name">Yukong</div>
+      </a>
+
+      <a href="Aglaea.html" target="_blank" class="card overflow-hidden block">
+        <img src="img personajes/Aglaea.jpg" alt="Aglaea" class="w-full object-cover h-64">
+        <div class="card-name">Aglaea</div>
+      </a>
+
+    </div>
+  </div>
+</body>
+</html>
